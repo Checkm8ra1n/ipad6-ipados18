@@ -12,6 +12,7 @@ Obtain openra1n special version `ipad6` branch: https://github.com/asdfugil/open
 `img4` is from img4lib (submodule: `projects/img4lib`)
 palera1n: https://github.com/palera1n/palera1n/releases
 pongoterm (pongoOS terminal): https://github.com/palera1n/PongoOS/blob/iOS15/scripts/pongoterm.c
+build pongoterm with: `clang -Os -x objective-c -framework IOKit -framework CoreFoundation pongoterm.c -lobjc -framework Foundation -o pongoterm`
 
 ## Current Limitations
 
@@ -185,7 +186,7 @@ mount_apfs /dev/disk1s8 /mnt8
 
 
 Upload system cryptex to `/mnt6/cryptex1/currend/os.dmg`
-Upload app cryptex to `/mnt6/cryptex1/currend/app.dmg`
+Upload app cryptex to `/mnt6/cryptex1/currend/app.dmg` that is the smaller dmg file on the iPadOS 18 IPSW
 
 ### Mount iOS 17
 ```
